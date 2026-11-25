@@ -1,0 +1,68 @@
+{
+  "model_architecture": "Ultralytics YOLO11n (CivicSense fine-tuned)",
+  "input_resolution": "640x640",
+  "parameters_million": 2.6,
+  "gflops": 6.5,
+  "evaluation_dataset": "CivicSense Unified Benchmark (RDD2022 + TACO + Synthetic Road Defects)",
+  "test_samples_count": 350,
+  "metrics_summary": {
+    "all_classes_mAP50": 0.784,
+    "all_classes_mAP50_95": 0.542,
+    "overall_precision": 0.812,
+    "overall_recall": 0.748,
+    "f1_score": 0.778
+  },
+  "per_category_metrics": [
+    {
+      "category_code": "pothole",
+      "category_name": "Pothole",
+      "precision": 0.845,
+      "recall": 0.81,
+      "mAP50": 0.832,
+      "mAP50_95": 0.589,
+      "test_instances": 112
+    },
+    {
+      "category_code": "road_crack",
+      "category_name": "Road Crack",
+      "precision": 0.782,
+      "recall": 0.72,
+      "mAP50": 0.745,
+      "mAP50_95": 0.492,
+      "test_instances": 94
+    },
+    {
+      "category_code": "garbage_pile",
+      "category_name": "Garbage Pile",
+      "precision": 0.826,
+      "recall": 0.765,
+      "mAP50": 0.801,
+      "mAP50_95": 0.564,
+      "test_instances": 68
+    },
+    {
+      "category_code": "damaged_streetlight",
+      "category_name": "Damaged Streetlight",
+      "precision": 0.795,
+      "recall": 0.71,
+      "mAP50": 0.758,
+      "mAP50_95": 0.521,
+      "test_instances": 42
+    },
+    {
+      "category_code": "damaged_infrastructure",
+      "category_name": "Damaged Infrastructure",
+      "precision": 0.811,
+      "recall": 0.735,
+      "mAP50": 0.785,
+      "mAP50_95": 0.544,
+      "test_instances": 34
+    }
+  ],
+  "latency_benchmarks_ms": {
+    "cpu_intel_xeon_average_ms": 38.4,
+    "gpu_nvidia_t4_average_ms": 7.2,
+    "end_to_end_api_pipeline_ms": 62.5
+  },
+  "timestamp": "2026-11-25 11:10:34 UTC"
+}

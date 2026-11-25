@@ -1,0 +1,12 @@
+# CivicSense Object Detection Taxonomy
+path: ../datasets/civic_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: pothole
+  1: road_crack
+  2: garbage_pile
+  3: damaged_streetlight
+  4: damaged_infrastructure

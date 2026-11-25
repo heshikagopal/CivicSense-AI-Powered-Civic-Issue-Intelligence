@@ -1,0 +1,40 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Databases & Local storage
+*.db
+*.sqlite3
+civicsense.db
+backend/uploads/raw_*
+test_doodle.jpg
+
+# Environment & Secrets
+.env
+.env.local
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/.oxlintrc.json
+frontend/dist/
+.DS_Store
+Thumbs.db
+
+# ML Weights & Checkpoints (large binary files)
+ml/weights/*.pt
+ml/weights/*.onnx
+ml/weights/civicsense_yolo11/
+ml/datasets/civic_dataset/
+
+# IDE
+.vscode/
+.idea/
